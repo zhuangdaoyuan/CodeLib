@@ -1,6 +1,6 @@
-def siteUrl = 'https://github.com/zhuangdaoyuan/ExpandTextView' // 项目的主页
-def gitUrl = 'https://github.com/zhuangdaoyuan/ExpandTextView.git' // Git仓库的url
-group="com.zdy.expandtextview"
+def siteUrl = 'https://github.com/zhuangdaoyuan/CodeLib' // 项目的主页
+def gitUrl = 'https://github.com/zhuangdaoyuan/CodeLib.git' // Git仓库的url
+group="com.zdy.codelib"
 install {
     repositories.mavenInstaller {
         // This generates POM.xml with proper parameters
