@@ -89,7 +89,7 @@ public class VerificationCodeInput extends ViewGroup {
             layoutParams.leftMargin = childHPadding;
             layoutParams.rightMargin = childHPadding;
             layoutParams.gravity = Gravity.CENTER;
-            editText.setOnKeyListener(onKeyListener);
+//            editText.setOnKeyListener(onKeyListener);
             setBg(editText, false);
             editText.setTextColor(textColor);
             editText.setTextSize(TypedValue.COMPLEX_UNIT_PX, textSize);
@@ -121,7 +121,9 @@ public class VerificationCodeInput extends ViewGroup {
                 public void afterTextChanged(Editable s) {
                     if (s.length() == 0) {
                         setBg(editText, false);
+                        isDelete = true;
                     } else {
+                        isDelete = false;
                         setBg(editText, true);
                         checkAndCommit();
                     }
